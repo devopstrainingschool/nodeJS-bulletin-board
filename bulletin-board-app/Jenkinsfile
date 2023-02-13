@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage ("Docker build") {
       steps {
-        sh "docker build -t devopstrainingschool/nodejs-jenkins:2023"
+        sh "docker build -t devopstrainingschool/nodejs-jenkins:2023 ."
       }
     }
   
