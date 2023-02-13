@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage ("Docker build") {
       steps {
-        dir('nodeJS-bulletin-board'){
+        dir('bulletin-board-app'){
         sh 'docker build -t devopstrainingschool/nodejs-jenkins .'
         }
       }
